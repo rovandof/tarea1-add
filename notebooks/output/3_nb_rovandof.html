@@ -15000,8 +15000,12 @@ Requirement already satisfied: et-xmlfile in c:\users\zine5\anaconda3\lib\site-p
 <span class="n">df_bc_2019_2020</span> <span class="o">=</span> <span class="n">df_bc_all</span><span class="p">[(</span><span class="n">df_bc_all</span><span class="o">.</span><span class="n">year</span> <span class="o">==</span> <span class="mi">2019</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df_bc_all</span><span class="o">.</span><span class="n">year</span> <span class="o">==</span> <span class="mi">2020</span><span class="p">)]</span>
 <span class="n">df_bc_2019_2020</span>
 
-<span class="c1">#Ambos muestran la misma informacion(Año, mes, día, valor, periodo), sin embargo el dataframe df_sii</span>
-<span class="c1">#muestra las fechas en formato &quot;Date&quot; y en string</span>
+<span class="c1">#Ambos dataframe tienen las misma cantidad de filas. Respecto de sus columnas muestran la misma informacion</span>
+<span class="c1">#(Año, mes, día, valor, periodo). Sin embargo el dataframe df_sii presenta columnas adicionales para las fechas</span>
+<span class="c1">#en formato &quot;Date&quot; y en string. Se identifica en una columna adicional la descripción del dia de la semana respecto</span>
+<span class="c1">#del campo dia de la fecha en df_sii. Los valores NaN del valor dolar en dataframe df_bc_2019_2020 que</span>
+<span class="c1">#corrseponden a los dias feriados, sábados y domingos se visualizan en valor cero para el dateframe</span>
+<span class="c1">#df_sii de acuerdo a transformación realizada en punto 3.</span>
 </pre></div>
 
      </div>
